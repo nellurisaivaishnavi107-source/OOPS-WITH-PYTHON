@@ -1,0 +1,18 @@
+class bankaccount:
+  accholdername="vyshu"
+  accnumber="XXXXX2345"
+  accbalance=1000
+  def deposit(self):
+    money=int(input("enter money:"))
+    money=money+self.balance
+    print(money)
+  def withdraw(self):
+    amount=int(input("enter amount:"))
+    amount=self.accbalance-amount
+    print(amount)
+  def balance(self):
+    print("Accountbalance:",self.accbalance)
+b=bankaccount()
+b.deposit()
+b.withdraw()
+b.balance()
